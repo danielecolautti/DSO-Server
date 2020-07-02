@@ -19,11 +19,15 @@ bash build_dso.sh
 
 Esempio di esecuzione:
 ```
-bin/dso_dataset files=/path/to/images depths=/path/to/depthMaps calib=/path/to/calibFile/calib.txt preset=0 mode=1 max=5 depthScale=256 sampleoutput=1
+bin/dso_dataset   
+files=/path/to/images   
+depths=/path/to/depthMaps   
+calib=/path/to/calibFile/calib.txt   
+preset=0 mode=1 max=5 depthScale=256 sampleoutput=1
 ```
 
-IMPORTANTE: 
-Il nome delle immagini rgb dev'essere nel formato xxxxxx.png (i.e. 000000.png)
+IMPORTANTE:   
+Il nome delle immagini rgb dev'essere nel formato xxxxxx.png (i.e. 000000.png)  
 Il nome delle mappe depth dev'essere nel formato xxxxxx\_depth.png (i.e. 000000\_depth.png)
 
 ### depths
@@ -42,7 +46,7 @@ Serve ad indicare al sistema quanto attenedere (secondi) al massimo prima di ter
 
 Se uguale ad 1, in aggiunta al comportamento originario, il sistema esporta la pointcloud. (Non completamente funzionante)
 
-## DSO
+
 
 Per gli altri argomenti si rimanda a [DSO](https://github.com/JakobEngel/dso)
 
